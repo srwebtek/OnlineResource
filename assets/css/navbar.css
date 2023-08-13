@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --deepBlack: #000000;
+  --pureWhite:#ffffff;
+  --neonBlue: #33ccff;
+  --matrixGreen:#00FF00;
+  --silver: #C0C0C0;
+}
+
+nav {
+  --navFontSize: 16px;
+  --navFontFamily: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --navBurgerHeight: 20px;
+  --navBurgerWidth: 20px;
+  --navBurgerColor: #fff;
+  --navDropDownWidth: 200px;
+  --navDropDownFontSize: 12px;
+  --navDropDownBackgroundColor: #00FF00;
+  --navDropDownFontColor: #000000;
+
+  display: flex;
+  flex-direction: column;
+  font-family: var(--navFontFamily);
+}
+#topRow {
+  width: 100vw;
+  background-color: #00ff00;
+  font-family: var(--navFontFamily);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+#topRow a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+
+#navMainRow {
+  display: flex;
+  flex-direction: row;
+  background-color: #252525;
+}
+
+#navMainRow a {
+  text-decoration: none;
+}
+@media (max-width: 950px) {
+  #navMainRow a:nth-child(n+8) {
+    display: none;
+  }
+}
+@media (max-width: 790px) {
+  #navMainRow a:nth-child(n+7) {
+    display: none;
+  }
+}
+@media (max-width: 670px) {
+  #navMainRow a:nth-child(n+6) {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  #navMainRow a:nth-child(n+5) {
+    display: none;
+  }
+}
+@media (max-width: 370px) {
+  #navMainRow a:nth-child(n+2) {
+    display: none;
+  }
+}
+
+#navMainRow h2 {
+  font-size: var(--navFontSize);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+#navMainRow h2:hover {
+  background-color: #000000;
+}
+
+/* Burger */
+#mainMenuBurger {
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+#mainMenuBurger .line {
+  width: 15px;
+  height: 2px;
+  background-color: white;
+  border-radius: 2px;
+}
+#mainMenuBurger::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  z-index: 1;
+}
+
+/* dropdown */
+#dropDownMenu {
+  width: var(--navDropDownWidth);
+  background-color: var(--navDropDownBackgroundColor);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#dropDownMenu a {
+  display: block;
+  color: var(--navDropDownFontColor);
+  text-decoration: none;
+  font-size: var(--navDropDownFontSize);
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+#dropDownMenu a:hover {
+  background-color: #00ff00;
+}
+
+
