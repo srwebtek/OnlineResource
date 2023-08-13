@@ -1,22 +1,5 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-:root {
-  --deepBlack: #000000;
-  --lightBlack: #252525;
-  --pureWhite: #ffffff;
-  --neonBlue: #33ccff;
-  --matrixGreen: #00ff00;
-  --silver: #c0c0c0;
-  --BasicFont: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --FancyFont: Arial, Helvetica, sans-serif;
-}
-
 nav {
-  --navTopRowTitleFontColor: var(--deepBlack);
+  --navTopRowTitleFontColor: var(--pureWhite);
   --navTopRowTitleFontSize: 1.5rem;
   --navTopRowBackgroundColor: var(--matrixGreen);
   --navTopRowFontFamily: var(--FancyFont);
@@ -31,7 +14,7 @@ nav {
   --navBurgerWidth: 20px;
   --navBurgerColor: var(--pureWhite);
 
-  --navDropDownWidth: 200px;
+  --navDropDownWidth: 300px;
   --navDropDownFontSize: 12px;
   --navDropDownBackgroundColor: var(--silver);
   --navDropDownBackgroundHoverColor: var(--pureWhite);
@@ -40,6 +23,8 @@ nav {
 
   display: flex;
   flex-direction: column;
+  position: fixed;
+  z-index: 5;
 }
 
 #topRow {
@@ -63,6 +48,7 @@ nav {
   display: flex;
   flex-direction: row;
   background-color: var(--navMainMenuBackgroundColor);
+ 
 }
 
 #navMainRow a {
@@ -140,11 +126,13 @@ nav {
 }
 
 #dropDownMenu {
+  top: 6em;
   width: var(--navDropDownWidth);
   background-color: var(--navDropDownBackgroundColor);
   padding-top: 1rem;
   padding-bottom: 1rem;
   box-shadow: 4px 4px 10px #000000;
+  z-index: 5;
 }
 
 #dropDownMenu a {

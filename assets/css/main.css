@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "RobotoRegular";
+  font-weight: 400;
+  src: url("../fonts/roboto-regular.woff2") format("woff2"),
+    url("../fonts/roboto-regular.woff") format("woff"),
+    url("../fonts/roboto-regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "RobotoBold";
+  font-weight: 700;
+  src: url("./fonts/roboto-bold.woff2") format("woff2"),
+    url("./fonts/roboto-bold.woff") format("woff"),
+    url("./fonts/roboto-bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "SpecialElite";
+  font-weight: 400;
+  src: url("../fonts/specialelite-regular.woff2") format("woff2"),
+    url("../fonts/specialelite-regular.woff") format("woff"),
+    url("../fonts/specialelite-regular.ttf") format("ttf");
+}
+
+:root {
+  --deepBlack: #000000;
+  --lightBlack: #252525;
+  --pureWhite: #ffffff;
+  --neonBlue: #33ccff;
+  --matrixGreen: #73800c;
+  --silver: #c0c0c0;
+  --BasicFont: RobotoRegular;
+  --FancyFont: SpecialElite;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#hero {
+  height: 90vh;
+  width: 100%;
+  background-color: var(--matrixGreen);
+}
+
+.odd {
+  min-height: 90vh;
+  width: 100%;
+  background-color: white;
+}
+.even {
+  min-height: 90vh;
+  width: 100%;
+  background-color: var(--matrixGreen);
+}
+.shape-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.odd svg {
+  fill: #73800c;
+}
+
+
+#typewriter {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  font-size: 2rem;
+  color: white;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+}
+.leftSidebar{
+ margin: 0 3rem 0 auto;
+}
+.centreContent{
+  background-color: red;
+}
+
+.rightSidebar{
+background-color: salmon;
+}
+
+footer{
+  background-color: #000000;
+  width: 100%;
+  height: 15rem;
+}
+
+.adSkyscraper{
+  height: 600px;
+  width: 120px;
+  background-color: chartreuse;
+}
+
