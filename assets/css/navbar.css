@@ -6,109 +6,130 @@
 
 :root {
   --deepBlack: #000000;
-  --pureWhite:#ffffff;
+  --lightBlack: #252525;
+  --pureWhite: #ffffff;
   --neonBlue: #33ccff;
-  --matrixGreen:#00FF00;
-  --silver: #C0C0C0;
+  --matrixGreen: #00ff00;
+  --silver: #c0c0c0;
+  --BasicFont: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --FancyFont: Arial, Helvetica, sans-serif;
 }
 
 nav {
-  --navFontSize: 16px;
-  --navFontFamily: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --navTopRowTitleFontColor: var(--deepBlack);
+  --navTopRowTitleFontSize: 1.5rem;
+  --navTopRowBackgroundColor: var(--matrixGreen);
+  --navTopRowFontFamily: var(--FancyFont);
+
+  --navMainMenuFontColor: var(--pureWhite);
+  --navMainMenuFontSize: 1rem;
+  --navMainMenuBackgroundColor: var(--lightBlack);
+  --navMainMenuBackgroundHoverColor: var(--deepBlack);
+  --navMainMenuFontFamily: var(--BasicFont);
+
   --navBurgerHeight: 20px;
   --navBurgerWidth: 20px;
-  --navBurgerColor: #fff;
+  --navBurgerColor: var(--pureWhite);
+
   --navDropDownWidth: 200px;
   --navDropDownFontSize: 12px;
-  --navDropDownBackgroundColor: #00FF00;
-  --navDropDownFontColor: #000000;
+  --navDropDownBackgroundColor: var(--silver);
+  --navDropDownBackgroundHoverColor: var(--pureWhite);
+  --navDropDownFontColor: var(--deepBlack);
+  --navDropDownFontFamily: var(--BasicFont);
 
   display: flex;
   flex-direction: column;
-  font-family: var(--navFontFamily);
 }
+
 #topRow {
   width: 100vw;
-  background-color: #00ff00;
+  background-color: var(--navTopRowBackgroundColor);
   font-family: var(--navFontFamily);
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
 #topRow a {
   text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
+  color: var(--navTopRowTitleFontColor);
+  font-size: var(--navTopRowTitleFontSize);
+  font-family: var(--navTopRowFontFamily);
 }
 
 #navMainRow {
   display: flex;
   flex-direction: row;
-  background-color: #252525;
+  background-color: var(--navMainMenuBackgroundColor);
 }
 
 #navMainRow a {
   text-decoration: none;
 }
 @media (max-width: 950px) {
-  #navMainRow a:nth-child(n+8) {
+  #navMainRow a:nth-child(n + 8) {
     display: none;
   }
 }
 @media (max-width: 790px) {
-  #navMainRow a:nth-child(n+7) {
+  #navMainRow a:nth-child(n + 7) {
     display: none;
   }
 }
 @media (max-width: 670px) {
-  #navMainRow a:nth-child(n+6) {
+  #navMainRow a:nth-child(n + 6) {
     display: none;
   }
 }
 @media (max-width: 500px) {
-  #navMainRow a:nth-child(n+5) {
+  #navMainRow a:nth-child(n + 5) {
     display: none;
   }
 }
 @media (max-width: 370px) {
-  #navMainRow a:nth-child(n+2) {
+  #navMainRow a:nth-child(n + 2) {
     display: none;
   }
 }
 
 #navMainRow h2 {
-  font-size: var(--navFontSize);
+  font-size: var(--navMainMenuFontSize);
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: white;
+  color: var(--navMainMenuFontColor);
   text-transform: uppercase;
-}
-#navMainRow h2:hover {
-  background-color: #000000;
+  font-family: var(--navMainMenuFontFamily);
 }
 
-/* Burger */
+#navMainRow h2:hover {
+  background-color: var(--navMainMenuBackgroundHoverColor);
+}
+
 #mainMenuBurger {
-  width: 40px;
-  height: 30px;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 40px;
+  height: 30px;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  margin: auto 0;
+  cursor: pointer;
 }
+
 #mainMenuBurger .line {
   width: 15px;
   height: 2px;
-  background-color: white;
+  background-color: var(--navBurgerColor);
   border-radius: 2px;
 }
+
 #mainMenuBurger::before {
   content: "";
   position: absolute;
@@ -118,12 +139,12 @@ nav {
   z-index: 1;
 }
 
-/* dropdown */
 #dropDownMenu {
   width: var(--navDropDownWidth);
   background-color: var(--navDropDownBackgroundColor);
   padding-top: 1rem;
   padding-bottom: 1rem;
+  box-shadow: 4px 4px 10px #000000;
 }
 
 #dropDownMenu a {
@@ -131,6 +152,7 @@ nav {
   color: var(--navDropDownFontColor);
   text-decoration: none;
   font-size: var(--navDropDownFontSize);
+  font-family: var(--navDropDownFontFamily);
   padding-left: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -138,7 +160,5 @@ nav {
 }
 
 #dropDownMenu a:hover {
-  background-color: #00ff00;
+  background-color: var(--navDropDownBackgroundHoverColor);
 }
-
-
