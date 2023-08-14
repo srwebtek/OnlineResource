@@ -1,3 +1,12 @@
+# YoTekHelper
+### URL: yotekhelper.com
+### Start Date: 13AUG23
+### Deploy: ASAP
+
+***
+
+
+
 ## To Add Pages:
 Each topic has its own folder. Therefore place the page in correct folder else create a new folder
 1. New page to be named xxxxx.html
