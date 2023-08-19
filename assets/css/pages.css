@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section {
+  padding: 0 1rem;
+  padding-top: 7rem;
+  background-color: #eee;
+}
+.wrapper_page {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 1500px;
+}
+.container_page {
+  max-width: 1200px;
+  min-height: 100vh;
+}
+.container_main_content {
+  background-color: white;
+  padding: 1rem;
+}
+
+/* ------------------------------------------------ */
+/* advertising sideboard and banners */
+/* ------------------------------------------------ */
+.container_left_sidebar {
+  display: none;
+  padding: 1rem;
+  margin: auto;
+}
+@media (min-width: 1150px) {
+  .container_left_sidebar {
+    display: block;
+  }
+}
+.container_right_sidebar {
+  display: none;
+  padding: 1rem;
+  margin: auto;
+}
+@media (min-width: 1000px) {
+  .container_right_sidebar {
+    display: block;
+  }
+}
+.advertisement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  font-size: 0.8rem;
+  border: 1px solid grey;
+}
+.ad_wide_skyscraper {
+  width: 160px;
+  height: 600px;
+  margin: auto;
+}
+.ad_banner {
+  width: 468px;
+  height: 60px;
+  display: none;
+  margin: 1rem auto;
+}
+@media (min-width: 490px) and (max-width: 749px) {
+  .ad_banner {
+    display: flex;
+  }
+}
+.ad_leaderboard {
+  width: 728px;
+  height: 90px;
+  display: none;
+  margin: 1rem auto;
+}
+
+@media (min-width: 750px) and (max-width: 999px) {
+  .ad_leaderboard {
+    display: flex;
+  }
+}
+.ad_inline_rectangle {
+  width: 300px;
+  height: 250px;
+  display: none;
+  margin: 1rem auto;
+}
+@media (min-width: 330px) and (max-width: 489px) {
+  .ad_inline_rectangle {
+    display: flex;
+  }
+}
+.ad_square {
+  width: 250px;
+  height: 250px;
+  display: none;
+  margin: 1rem auto;
+  background-color: green;
+}
+@media (min-width: 280px) and (max-width: 329px) {
+  .ad_square {
+    display: flex;
+  }
+}
+
+/* 
+<p>250 x 250 - Square.</p>
+<p>200 x 200 - Small square.</p>
+<p>468 x 60 - Banner.</p>
+<p>728 x 90 - Leaderboard.</p>
+<p>300 x 250 - Inline rectangle.</p>
+<p>336 x 280 - Large rectangle.</p>
+<p>120 x 600 - Skyscraper.</p>
+<p>160 x 600 - Wide skyscraper.</p> --> 
+*/
