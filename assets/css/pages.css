@@ -23,32 +23,44 @@
   padding: 1rem;
 }
 
-article h1{
+article h1 {
   font-family: var(--BasicFontBold);
   font-size: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-article h2{
+article h2 {
   font-family: var(--BasicFont);
   font-size: 1.6rem;
   margin-top: 2rem;
 }
-article ol li{
+article ol li {
   font-family: var(--BasicFont);
   font-size: 1.2rem;
 }
-article p{
+article p {
   font-family: var(--BasicFont);
   margin-bottom: 1rem;
   font-size: 1.2rem;
   line-height: 1.5;
   text-align: justify;
 }
-article li{
+article li {
   margin-left: 2rem;
 }
 
+textarea {
+  font-family: monospace;
+  color: #dddddd;
+  background-color: #000;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow: scroll;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-top: 1rem;
+}
 
 /* ------------------------------------------------ */
 /* advertising sideboard and banners */
