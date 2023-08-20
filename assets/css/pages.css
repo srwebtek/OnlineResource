@@ -50,8 +50,12 @@ article p {
   line-height: 1.5;
   text-align: justify;
 }
-article li {
+article ul li{
   margin-left: 2rem;
+}
+article ul li p{
+  margin: 0;
+  line-height: 1.8;
 }
 
 article textarea {
