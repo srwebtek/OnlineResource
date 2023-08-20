@@ -34,12 +34,19 @@ article h2{
   font-size: 1.6rem;
   margin-top: 2rem;
 }
+article ol li{
+  font-family: var(--BasicFont);
+  font-size: 1.2rem;
+}
 article p{
   font-family: var(--BasicFont);
   margin-bottom: 1rem;
   font-size: 1.2rem;
   line-height: 1.5;
   text-align: justify;
+}
+article li{
+  margin-left: 2rem;
 }
 
 
