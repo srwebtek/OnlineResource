@@ -32,7 +32,7 @@
                 sitemaps play a crucial role in helping search engine crawlers
                 discover and index your content. But what about videos? Are
                 videos included in XML sitemaps, and do they impact your
-                website's SEO? In this article, we'll delve into the world of
+                website's SEO? Lets delve into the world of
                 XML sitemaps and videos, exploring whether videos should be a
                 part of your sitemap strategy.
               </p>
@@ -58,13 +58,36 @@
 
               <h2>Video Schema Markup:</h2>
               <p>
-                Video schema markup is a form of structured data that provides
-                search engines with detailed information about your video
-                content. This includes metadata like the video's title,
-                description, duration, and thumbnail. While not included in XML
-                sitemaps, video schema markup helps search engines understand
-                and index your video content more effectively.
+                Video schema markup is a valuable tool that allows you to provide search engines with specific and structured information about your video content. By adding schema markup to your web pages, you enhance the way search engines understand and present your videos in search results. This helps improve the visibility and engagement of your video content with users.
               </p>
+<ul>
+  <li><h3>How Video Schema Markup Works:</h3>
+    <p>Video schema markup uses structured data in a standardized format that search engines can interpret. By including this markup, you're essentially providing search engines with a set of key information about your video. This information is then used to create rich snippets in search results, which can include details like video thumbnails, titles, durations, and even the upload date.</p></li>
+  <li><h3>Where to Add Video Schema Markup:</h3>
+    <p>To implement video schema markup, you need to include a script within the <head> section of your web page's HTML code. Placing it in the <head> section ensures that search engines can access this information before rendering the page's content. This markup doesn't affect the appearance of your web page; rather, it serves as hidden metadata that search engines use to enhance search results.</p></li>
+  <li><h3>Example Video Schema Markup:</h3>
+    <p>Here's an example of how you might add video schema markup to your webpage's <head> section:</p></li></ul>
+   
+   
+      <textarea wrap="off" rows="15">
+  <head>
+    <script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "VideoObject",
+    "name": "Example Video Title",
+    "description": "This is an example video description.",
+    "thumbnailUrl": "https://www.example.com/images/video-thumbnail.jpg",
+    "uploadDate": "2023-08-19T10:00:00Z",
+    "duration": "PT2M",
+    "embedUrl": "https://www.example.com/embedded-video-url"
+    }
+    </script>
+  </head>
+</textarea>
+    <p>By using video schema markup, you're enhancing the way your videos are presented in search results, making them more appealing to users and potentially attracting more clicks.</p>
+              
+            
 
               <h2>Video Sitemaps:</h2>
               <p>
@@ -75,6 +98,24 @@
                 specialized sitemap can improve the discoverability of your
                 videos by search engines.
               </p>
+              <textarea wrap="off" rows="17">
+  <?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+          xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+          
+    <url>
+      <loc>https://www.example.com/videos/example-video</loc>
+      <video:video>
+        <video:thumbnail_loc>https://www.example.com/images/video-thumbnail.jpg</video:thumbnail_loc>
+        <video:title>Example Video Title</video:title>
+        <video:description>This is an example video description.</video:description>
+        <video:content_loc>https://www.example.com/videos/example-video.mp4</video:content_loc>
+        <video:player_loc allow_embed="yes">https://www.example.com/embedded-video-player</video:player_loc>
+        <video:duration>120</video:duration>
+        <video:publication_date>2023-08-19T10:00:00Z</video:publication_date>
+      </video:video>
+    </url>
+              </textarea>
 
               <h2>Video Hosting Platforms:</h2>
               <p>
@@ -93,11 +134,7 @@
                 multifaceted strategy that involves optimizing various elements
                 of your website, including both textual and multimedia content.
               </p>
-              <p>
-                In our next article, we'll explore whether every website needs
-                to have a sitemap and the benefits it brings to your site's SEO.
-                Stay tuned!
-              </p>
+              <p>While videos aren't typically included in XML sitemaps, the creation of video sitemaps offers a dedicated solution for optimizing video content visibility. By providing essential information to search engines, you can ensure your videos are effectively discovered and showcased, enhancing their impact and engagement."</p>
             </article>
           </div>
           <div class="ad_inline_rectangle advertisement">Advertisement</div>
@@ -106,7 +143,7 @@
         <div class="container_right_sidebar">
           <div class="ad_wide_skyscraper advertisement">Advertisement</div>
         </div>
-      </div>
-    </div>
-  </body>
+</div>
+</div>
+</body>
 </html>
