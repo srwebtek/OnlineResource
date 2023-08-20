@@ -23,6 +23,26 @@
   padding: 1rem;
 }
 
+article h1{
+  font-family: var(--BasicFontBold);
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+article h2{
+  font-family: var(--BasicFont);
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+article p{
+  font-family: var(--BasicFont);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
 /* ------------------------------------------------ */
 /* advertising sideboard and banners */
 /* ------------------------------------------------ */
