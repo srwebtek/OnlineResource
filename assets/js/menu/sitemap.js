@@ -15,6 +15,10 @@ const contentSitemap = {
     link: "/sitemap/how-to-create-an-image-sitemap.html",
     title: "How to Create an Image Sitemap",
   },
+  Item18: {
+    link: "/sitemap/how-to-create-an-XML-sitemap.html",
+    title: "How to Create an XML Sitemap",
+  },
   Item5: {
     link: "/sitemap/how-to-submit-your-sitemap-to-search-engines.html",
     title: "How to Submit Your Sitemap to Search Engines ",
@@ -67,6 +71,7 @@ const contentSitemap = {
     link: "/sitemap/where-to-find-your-sitemap-on-a-website.html",
     title: "Where to Find Your Sitemap on a Website",
   },
+  
 };
 
 export default contentSitemap;
