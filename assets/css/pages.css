@@ -42,6 +42,7 @@ article h3 {
 article ol li {
   font-family: var(--BasicFont);
   font-size: 1.2rem;
+  margin-left: 2rem;
 }
 article p {
   font-family: var(--BasicFont);
