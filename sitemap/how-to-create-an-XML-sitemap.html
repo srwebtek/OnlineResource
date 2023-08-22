@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How To Create an XML Sitemap</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
+    <script src="../assets/js/app.js" async></script>
+    <script type="module" src="../assets/js/navbar.js" async></script>
+  </head>
+  <body>
+    <nav class="flex-column">
+      <div id="topRow"></div>
+      <div id="navMainRow"></div>
+      <ul id="dropDownMenu"></ul>
+    </nav>
+    <div class="section">
+      <div class="wrapper_page">
+        <div class="container_left_sidebar">
+          <div class="ad_wide_skyscraper advertisement">Advertisement</div>
+        </div>
+        <div class="container_page">
+          <div class="ad_banner advertisement">Advertisement</div>
+          <div class="ad_leaderboard advertisement">Advertisement</div>
+          <div class="container_main_content">
+            <article>
+              <h1>How To Create an XML Sitemap</h1>
+              <p>
+                Creating an XML sitemap is a fundamental step in enhancing your
+                website's visibility on search engines like Google and Bing. An
+                XML sitemap serves as a roadmap that helps search engines
+                navigate and understand the structure of your website. Here's a
+                simple guide to creating an XML sitemap using basic HTML:
+              </p>
+              <h2>Understanding XML Sitemaps:</h2>
+              <p>
+                An XML sitemap is a plain text file that lists all the important
+                URLs on your website. It provides search engines with a clear
+                overview of your content, helping them index your pages more
+                effectively.
+              </p>
+              <h2>Steps to Create an XML Sitemap:</h2>
+              <ol>
+                <li>
+                  <p>
+                    Plan Your Sitemap: Start by identifying the main pages of
+                    your website that you want to include in the sitemap. These
+                    could be your homepage, product pages, blog posts, and more.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    HTML Markup: Create a new HTML file using a simple text
+                    editor. Don't worry about styling; focus on the structure.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Add URLs: For each page you want to include, add the
+                    following lines of code inside your HTML file:
+                  </p>
+                </li>
+                <textarea wrap="off" rows="4">
+    <url>
+        <loc>URL_OF_YOUR_PAGE</loc>
+    </url>                    
+                  </textarea
+                >
+
+                <li>
+                  <p>
+                    XML Sitemap Header: Add the following lines at the beginning
+                    of your HTML file to define the XML format and specify that
+                    it's an XML sitemap:
+                  </p>
+                </li>
+                <textarea rows="3" wrap="off">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+                  </textarea
+                >
+                <li>
+                  <p>
+                    After adding all the URLs, close the &lt;urlset&gt; tag at
+                    the end of your file:
+                  </p>
+                </li>
+                <textarea rows="2" wrap="off">
+    </urlset>
+                  </textarea
+                >
+
+                <li>
+                  <p>
+                    Save the File: Save your HTML file with a .xml extension,
+                    such as sitemap.xml.
+                  </p>
+                </li>
+              </ol>
+
+              <h2>Example XML Sitemap:</h2>
+              <p>
+                The following XML sitemap follows the basic structure and
+                guidelines required for submission to search engines. Once you
+                have a sitemap like this ready, you can submit it through the
+                respective webmaster tools for Google and Bing to help improve
+                the visibility of your website's pages in search results.
+              </p>
+              <textarea wrap="off" rows="13">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <url>
+            <loc>https://www.example.com/</loc>
+        </url>
+        <url>
+            <loc>https://www.example.com/about</loc>
+        </url>
+        <url>
+            <loc>https://www.example.com/contact</loc>
+        </url>
+    </urlset>
+</textarea
+              >
+              <p>
+                For assistance in submitting your XML sitemap to Google and Bing
+                webmaster tools, explore our guide on
+                <a
+                  href="../sitemap/how-to-submit-your-sitemap-to-search-engines.html"
+                  >"How to Submit Your Sitemap to Search Engines."</a
+                >
+                This resource offers step-by-step instructions to help you
+                easily navigate the process and ensure your website gets the
+                visibility it deserves.
+              </p>
+              <h2>Using Your XML Sitemap:</h2>
+              <p>
+                Once you've created your XML sitemap, you can submit it to
+                search engines like Google and Bing. This helps search engines
+                understand your website's structure and index your pages more
+                effectively, which can lead to improved search visibility.
+              </p>
+
+              <p>
+                Remember, while this basic approach is helpful for understanding
+                the concept, real-world scenarios might involve using tools or
+                plugins to generate more complex XML sitemaps. As you become
+                more familiar with HTML and SEO, you can explore advanced
+                techniques and tools to optimize your website further.
+              </p>
+
+              <p>
+                By creating an XML sitemap, you're taking an important step
+                toward improving your website's SEO and helping search engines
+                discover your valuable content.
+              </p>
+            </article>
+          </div>
+          <div class="ad_inline_rectangle advertisement">Advertisement</div>
+          <div class="ad_square advertisement">Advertisement</div>
+        </div>
+        <div class="container_right_sidebar">
+          <div class="ad_wide_skyscraper advertisement">Advertisement</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
