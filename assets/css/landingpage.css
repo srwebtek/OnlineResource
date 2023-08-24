@@ -1,9 +1,33 @@
-
 #hero {
-  height: 90vh;
+  height: 70vh;
   width: 100%;
   background-color: var(--matrixGreen);
+  position: relative;
 }
+
+#heroLogo {
+  position: absolute;
+  top: 20%;
+  right: 10vw;
+}
+#heroLogo svg{
+  width: 500px;
+  fill:#000;
+  stroke-width:0.8;
+  opacity: 0.03;
+}
+@media (max-width: 1100px) {
+  #heroLogo svg{
+    width: 400px;
+  }
+}
+@media (max-width: 900px) {
+  #heroLogo svg{
+    width: 300px;
+  }
+}
+
+
 
 .odd {
   min-height: 90vh;
@@ -30,58 +54,54 @@
   left: 10%;
   font-size: 2rem;
   color: white;
+  z-index: 5;
 }
-
 .wrapper {
+  max-width: 1500px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+.card-container {
   display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-}
-.centreContent {
-  background-color: red;
-  height: 70vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
-
-.leftSidebar {
-  display: none;
-}
-
-.rightSidebar {
-  display: none;
-}
-.adSkyscraper {
-  height: 600px;
-  width: 120px;
-  background-color: chartreuse;
-}
-@media (min-width: 1150px) {
-  .wrapper {
-    grid-template-columns: 200px 1000px;
+@media (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
   }
-  .leftSidebar {
-    display: block;
-    margin:auto
+}
+@media (max-width: 790px) {
+  .card-container {
+    grid-template-columns: 1fr;
   }
-  .rightSidebar {
+  .card:nth-child(n + 4) {
     display: none;
   }
 }
-@media (min-width: 1300px) {
-  .wrapper {
-    grid-template-columns: 200px 1000px 200px;
-  }
-  .leftSidebar {
-    display: block;
-    margin:auto
-  }
-  .rightSidebar {
-    display: block;
-    margin:auto
-  }
+.card h2 {
+  margin-bottom: 1rem;
 }
-footer {
-  background-color: #000000;
-  width: 100%;
-  height: 15rem;
+.card p {
+  margin-bottom: 1rem;
+}
+.card a {
+  color: #007bff;
+  text-decoration: none;
+}
+.truncated-paragraph {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
