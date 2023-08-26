@@ -51,10 +51,10 @@ article p {
   line-height: 1.5;
   text-align: justify;
 }
-article ul li{
+article ul li {
   margin-left: 2rem;
 }
-article ul li p{
+article ul li p {
   margin: 0;
   line-height: 1.8;
 }
@@ -71,11 +71,11 @@ article textarea {
   line-height: 1.5;
   padding-top: 1rem;
 }
-article span{
+article span {
   color: red;
   font-weight: bold;
 }
-article p a{
+article p a {
   color: blue;
 }
 /* ------------------------------------------------ */
@@ -171,3 +171,106 @@ article p a{
 <p>120 x 600 - Skyscraper.</p>
 <p>160 x 600 - Wide skyscraper.</p> --> 
 */
+
+.mainTopicPage article section {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  justify-content: center;
+}
+
+.mainTopicPage .card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+.mainTopicPage .card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.mainTopicPage .card:nth-child(n + 3) {
+  display: none;
+}
+
+@media (max-width: 790px) {
+  .mainTopicPage .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mainTopicPage .card h2 {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+.mainTopicPage .card p {
+  margin-bottom: 1rem;
+}
+.mainTopicPage .card a {
+  color: #007bff;
+  text-decoration: none;
+}
+.mainTopicPage .truncated-paragraph {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (min-width: 750px) {
+  .mainTopicPage .ad_leaderboard {
+    display: flex;
+  }
+}
+.mainTopicPage .container_left_sidebar {
+  display: none;
+}
+.mainTopicPage .container_right_sidebar {
+  display: none;
+}
+.mainTopicPage .snippetCards p {
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+
+.mainTopicPage .snippetCards a {
+  display: flex;
+  align-items: center;
+  background-color: #ddd;
+  border: solid black 2px;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 10px;
+  width: 90%;
+  color: #000;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+.mainTopicPage .snippetCards span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.mainTopicPage .snippetCards span p {
+  margin: 0;
+  font-family: var(--BasicFontBold);
+  font-size: 1.5rem;
+}
+@media (max-width: 750px) {
+  .mainTopicPage article section {
+    grid-template-columns: 1fr;
+  }
+  .mainTopicPage .truncated-paragraph {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+  }
+  .mainTopicPage .snippetCards a {
+    width: 100%;
+  }
+}
