@@ -31,14 +31,14 @@ const contentSitemap = {
     link: "/sitemap/is-a-sitemap-free-to-create.html",
     title: "Is a Sitemap Free to Create?",
   },
-  // Item8: {
-  //   link: "/sitemap/is-a-sitemap-still-relevant-for-modern-websites.html",
-  //   title: "Is a Sitemap Still Relevant for Modern Websites?",
-  // },
-  // Item9: {
-  //   link: "/sitemap/is-a-sitemap-xml-or-html.html",
-  //   title: "Is a Sitemap XML or HTML?",
-  // },
+  Item8: {
+    link: "/sitemap/is-a-sitemap-still-relevant-for-modern-websites.html",
+    title: "Is a Sitemap Still Relevant for Modern Websites?",
+  },
+  Item9: {
+    link: "/sitemap/is-a-sitemap-xml-or-html.html",
+    title: "Is a Sitemap XML or HTML?",
+  },
   // Item10: {
   //   link: "/sitemap/should-i-exclude-images-from-my-sitemap.html",
   //   title: "Should I Exclude Images from My Sitemap?",
