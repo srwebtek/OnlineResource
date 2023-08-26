@@ -3,18 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sitemap</title>
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Sitemaps</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <link rel="stylesheet" href="../assets/css/pages.css" />
     <script src="../assets/js/app.js" async></script>
-    <script  type="module" src="../assets/js/navbar.js" async></script>
+    <script type="module" src="../assets/js/navbar.js" async></script>
+    <script type="module" src="../assets/js/summary.js"></script>
   </head>
-  <body>
+  <body class="mainTopicPage">
     <nav class="flex-column">
       <div id="topRow"></div>
       <div id="navMainRow"></div>
       <ul id="dropDownMenu"></ul>
-    </nav>   
-    <div class="featureArticle"></div> 
+    </nav>
+    <div class="section">
+      <div class="wrapper_page">
+        <div class="container_left_sidebar">
+          <div class="ad_wide_skyscraper advertisement">Advertisement</div>
+        </div>
+        <div class="container_page">
+          <div class="ad_banner advertisement">Advertisement</div>
+          <div class="ad_leaderboard advertisement">Advertisement</div>
+          <div class="container_main_content">
+            <article>
+              <h1>Sitemaps</h1>
+              <section >
+                <div class="snippetCards">
+                  <h2>Snippets:</h2>
+                  <a href=""><span><p>1</p></span><p>Minimal Sitemap</p></a>
+                  <a href=""><span><p>2</p></span><p>Detailed Sitemap</p></a>
+                  <a href=""><span><p>3</p></span><p>Image Sitemap</p></a>
+                  <a href=""><span><p>3</p></span><p>Video Sitemap</p></a>
+                </div>
+                <div>
+                  <h2>Recommended:</h2>
+                  <div id="summary"></div>
+                </div>
+                
+
+              </section>
+            </article>
+          </div>
+          <div class="ad_inline_rectangle advertisement">Advertisement</div>
+          <div class="ad_square advertisement">Advertisement</div>
+        </div>
+        <div class="container_right_sidebar">
+          <div class="ad_wide_skyscraper advertisement">Advertisement</div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
