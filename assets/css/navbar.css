@@ -145,7 +145,7 @@ nav {
   padding-left: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 #dropDownMenu a:hover {
