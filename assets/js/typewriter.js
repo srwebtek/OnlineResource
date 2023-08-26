@@ -9,17 +9,21 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 const phrases = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "JSON",
-  "Markdown",
   "sitemap.xml",
   "SEO",
-  ".htaccess",
-  "SVG",
-  "font-family"
 ];
+// const phrases = [
+//   "HTML",
+//   "CSS",
+//   "JavaScript",
+//   "JSON",
+//   "Markdown",
+//   "sitemap.xml",
+//   "SEO",
+//   ".htaccess",
+//   "SVG",
+//   "font-family"
+// ];
 
 const el = document.getElementById("typewriter");
 let waitBeforeTypingTime = 1500;

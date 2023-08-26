@@ -1,28 +1,28 @@
-const contentJSON = {
+const contentSEO = {
     Item1: {
       link: "#",
-      title: "JSON:Item 1",
+      title: "SEO:Item 1",
     },
     Item2: {
       link: "#",
-      title: "JSON:Item 2",
+      title: "SEO:Item 2",
     },
     Item3: {
       link: "#",
-      title: "JSON:Item 3",
+      title: "SEO:Item 3",
     },
     Item4: {
       link: "#",
-      title: "JSON:Item 4",
+      title: "SEO:Item 4",
     },
     Item5: {
       link: "#",
-      title: "JSON:Item 5",
+      title: "SEO:Item 5",
     },
     Item6: {
       link: "#",
-      title: "JSON:Item 6",
+      title: "SEO:Item 6",
     },
   };
   
-  export default contentJSON;
+  export default contentSEO;

@@ -2,7 +2,7 @@ import content from "./menu/content.js";
 import contentHTML from "./menu/html.js";
 import contentCSS from "./menu/css.js";
 import contentJS from "./menu/javascript.js";
-import contentJSON from "./menu/json.js";
+import contentJSON from "./menu/seo.js";
 import contentSitemap from "./menu/sitemap.js";
 import contentHTAccess from "./menu/htaccess.js";
 import contentRobots from "./menu/robots.js";
@@ -50,13 +50,14 @@ let ddcontent = "";
 var currentPath = window.location.pathname;
 var folderName = currentPath.split("/")[1];
 
+
 if (folderName === "html") {
   ddcontent = contentHTML;
 } else if (folderName === "css") {
   ddcontent = contentCSS;
 } else if (folderName === "javascript") {
   ddcontent = contentJS;
-} else if (folderName === "json") {
+} else if (folderName === "seo") {
   ddcontent = contentJSON;
 } else if (folderName === "htaccess") {
   ddcontent = contentHTAccess;

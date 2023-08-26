@@ -1,32 +1,32 @@
 const content = {
-  HTML: {
-    link: "../html/html.html",
-    title: "HTML",
-  },
-  CSS: {
-    link: "../css/css.html",
-    title: "CSS",
-  },
-  JS: {
-    link: "../javascript/javascript.html",
-    title: "JavaScript",
-  },
+  // HTML: {
+  //   link: "../html/html.html",
+  //   title: "HTML",
+  // },
+  // CSS: {
+  //   link: "../css/css.html",
+  //   title: "CSS",
+  // },
+  // JS: {
+  //   link: "../javascript/javascript.html",
+  //   title: "JavaScript",
+  // },
   JSON: {
-    link: "../json/json.html",
-    title: "JSON",
+    link: "../seo/seo.html",
+    title: "SEO",
   },
-  HTACCESS: {
-    link: "../htaccess/htaccess.html",
-    title: "HTACCESS",
-  },
+  // HTACCESS: {
+  //   link: "../htaccess/htaccess.html",
+  //   title: "HTACCESS",
+  // },
   SITEMAP: {
     link: "../sitemap/sitemap.html",
-    title: "sitemap",
+    title: "Sitemap",
   },
-  ROBOTS: {
-    link: "../robots/robots.html",
-    title: "robots.txt",
-  },
+  // ROBOTS: {
+  //   link: "../robots/robots.html",
+  //   title: "robots.txt",
+  // },
 };
 
 export default content;
