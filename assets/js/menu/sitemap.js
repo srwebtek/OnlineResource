@@ -23,14 +23,14 @@ const contentSitemap = {
     link: "/sitemap/how-to-submit-your-sitemap-to-search-engines.html",
     title: "How to Submit Your Sitemap to Search Engines ",
   },
-  // Item6: {
-  //   link: "/sitemap/importance-of-sitemaps-for-seo.html",
-  //   title: "Importance of Sitemaps for SEO",
-  // },
-  // Item7: {
-  //   link: "/sitemap/is-a-sitemap-free-to-create.html",
-  //   title: "Is a Sitemap Free to Create?",
-  // },
+  Item6: {
+    link: "/sitemap/importance-of-sitemaps-for-seo.html",
+    title: "Importance of Sitemaps for SEO",
+  },
+  Item7: {
+    link: "/sitemap/is-a-sitemap-free-to-create.html",
+    title: "Is a Sitemap Free to Create?",
+  },
   // Item8: {
   //   link: "/sitemap/is-a-sitemap-still-relevant-for-modern-websites.html",
   //   title: "Is a Sitemap Still Relevant for Modern Websites?",
